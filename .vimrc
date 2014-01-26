@@ -23,6 +23,7 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'godlygeek/tabular'
 Bundle 'ervandew/supertab'
+Bundle 'scrooloose/nerdcommenter'
 
 filetype plugin indent on
 
@@ -44,20 +45,6 @@ augroup reload_vimrc " {
 	    autocmd!
 	    autocmd BufWritePost $MYVIMRC source $MYVIMRC
 	augroup END " }
-
-
-" http://www.bestofvim.com/tip/trailing-whitespace/
-" Removes trailing spaces
-function! TrimWhiteSpace()
-    %s/\s\+$//e
-endfunction
-
-nnoremap <silent> <Leader>rts :call TrimWhiteSpace()<CR>
-
-autocmd FileWritePre    * :call TrimWhiteSpace()
-autocmd FileAppendPre   * :call TrimWhiteSpace()
-autocmd FilterWritePre  * :call TrimWhiteSpace()
-autocmd BufWritePre     * :call TrimWhiteSpace()
 
 " --- From vim-get
 
@@ -86,9 +73,9 @@ set pastetoggle=<F8>
 
 set autoindent " Automatically set the indent of a new line (local to buffer)
 set smartindent " smartindent  (local to buffer)
-
 set sidescrolloff=2
 set numberwidth=4
+filetype plugin on
 
 " Searching *******************************************************************
 set hlsearch " highlight search
