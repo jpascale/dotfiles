@@ -24,6 +24,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'godlygeek/tabular'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'kaichen/vim-snipmate-ruby-snippets'
 
 filetype plugin indent on
 
