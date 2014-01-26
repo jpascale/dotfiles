@@ -51,4 +51,6 @@ echo "Setting up vim"
    echo "Remove your .vimrc if you want it to be replaced!") || \
    ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
 
+cp $HOME/.vim/bundle/vim-snipmate-ruby-snippets/*.snippets $HOME/.vim/bundle/snipmate.vim/snippets
+
 echo "--- OK!"

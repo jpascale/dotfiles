@@ -23,8 +23,8 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'godlygeek/tabular'
 Bundle 'ervandew/supertab'
-Bundle 'scrooloose/nerdcommenter'
 Bundle 'kaichen/vim-snipmate-ruby-snippets'
+Bundle 'vim-scripts/tComment'
 
 filetype plugin indent on
 
@@ -125,7 +125,6 @@ set softtabstop=2
 set shiftwidth=2
 set tabstop=2
 set expandtab
-imap <tab> <c-x><c-o>
 runtime macros/matchit.vim
 
 set omnifunc=rubycomplete#Complete
