@@ -7,6 +7,8 @@ ZSH=$HOME/.dotfiles/dependencies/oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="frisk"
 
+alias vim='mvim -v'
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
