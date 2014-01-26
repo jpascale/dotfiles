@@ -42,7 +42,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew bundler colorize gem history history-substring-search xcode zeus tmux tmuxinator rvm ruby redis-cli rails postgres osx node copydir copyfile cp)
+plugins=(git git-extras brew bundler colorize gem history history-substring-search xcode zeus tmux tmuxinator rvm ruby redis-cli rails postgres osx node copydir copyfile cp)
 
 source $ZSH/oh-my-zsh.sh
 
