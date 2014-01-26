@@ -34,11 +34,21 @@ echo "--- OK!"
 echo "Setting up tmux" 
 
 ([ -f $HOME/.tmux.conf ] && \
-   echo "Remove your .zshrc if you want it to be replaced!") || \
+   echo "Remove your .tmux.conf if you want it to be replaced!") || \
    ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
 
 echo "--- Installing fixes"
 
 brew install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste 2> /dev/null || echo
+
+echo "--- OK!"
+
+
+
+echo "Setting up vim" 
+
+([ -f $HOME/.vimrc ] && \
+   echo "Remove your .vimrc if you want it to be replaced!") || \
+   ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
 
 echo "--- OK!"
