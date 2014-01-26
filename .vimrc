@@ -25,6 +25,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'ervandew/supertab'
 Bundle 'kaichen/vim-snipmate-ruby-snippets'
 Bundle 'vim-scripts/tComment'
+Bundle 'vim-scripts/AutoTag'
 
 filetype plugin indent on
 
