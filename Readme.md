@@ -2,7 +2,7 @@
 0.0.3 / 2014-01-26
 ==================
 
- * finnaly works
+ * change editor to mvim for git commit
  * changing to mvim
  * add many things to new vim
  * add vim plugins
