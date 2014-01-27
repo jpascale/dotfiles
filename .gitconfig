@@ -28,6 +28,7 @@
   fa = fetch --all
   plm = pull origin master
   pom = push origin master
+  pp = push origin master
   pl = pull origin
   po = push origin
   b = branch

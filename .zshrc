@@ -7,6 +7,15 @@ ZSH=$HOME/.dotfiles/dependencies/oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="frisk"
 
+LC_ALL=pl_PL.UTF-8
+LC_CTYPE=pl_PL.UTF-8
+LANG=pl_PL.UTF-8
+export LC_ALL
+export LC_CTYPE
+export LANG
+
+git config --global push.default simple
+
 alias vim='mvim -v'
 
 HIST_STAMPS="mm/dd/yyyy"

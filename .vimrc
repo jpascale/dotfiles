@@ -26,6 +26,8 @@ Bundle 'ervandew/supertab'
 Bundle 'kaichen/vim-snipmate-ruby-snippets'
 Bundle 'vim-scripts/tComment'
 Bundle 'vim-scripts/AutoTag'
+Bundle 'vim-scripts/zoomwintab.vim'
+
 
 filetype plugin indent on
 
@@ -121,13 +123,24 @@ autocmd FileType html set filetype=xhtml " we couldn't care less about html
 
 let mapleader = ","
 set noswapfile
-set encoding=utf-8
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2
 set expandtab
 imap <tab> <c-x><c-o>
 runtime macros/matchit.vim
+
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  "setglobal bomb
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
+
+map <c-n> :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 set omnifunc=rubycomplete#Complete
 let g:rubycomplete_buffer_loading = 1
@@ -146,6 +159,7 @@ let g:solarized_termtrans = 1
 let g:solarized_termcolors=16
 colorscheme solarized
 set background=dark
+
 
 " --- Git shortcuts
 nnoremap <silent> <leader>gd :Gdiff<cr>
